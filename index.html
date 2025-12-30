@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>akila portofolio</title>
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="style.css" rel="stylesheet">
+
+
+
+
+</head>
+<body> 
+   <!-- HEADER NAVIGASI -->
+<header class="w-full fixed top-0 left-0 z-50 bg-white/80 backdrop-blur-sm shadow-md bu">
+  <div class="container mx-auto">
+    <div class="flex items-center justify-between py-4 px-4">
+
+      <!-- LOGO -->
+         <div class="relative z-10 pl-6 flex items-center">
+          <img src="img/logo.png" alt="logo" class="w-14 h-14 object-cover rounded-full">
+        <p class="text-xl text-pink-500 font-bold">A<span class="text-purple-500">QIILAH</span></p>
+      </div>
+   
+
+      <!-- HAMBURGER BUTTON (MOBILE) -->
+      <button
+        id="hamburger"
+        class="block lg:hidden focus:outline-none"
+      >
+        <span class="block w-6 h-0.5 bg-slate-700 mb-1"></span>
+        <span class="block w-6 h-0.5 bg-slate-700 mb-1"></span>
+        <span class="block w-6 h-0.5 bg-slate-700"></span>
+      </button>
+
+      <!-- NAVIGASI DESKTOP -->
+      <nav class="hidden lg:flex space-x-6">
+        <a href="#home" class="text-slate-600 hover:text-purple-500 font-medium">Home</a>
+        <a href="#about" class="text-slate-600 hover:text-purple-500 font-medium">About Me</a>
+        <a href="#contact" class="text-slate-600 hover:text-purple-500 font-medium">Contact</a>
+      </nav>
+    </div>
+
+    <!-- NAVIGASI MOBILE -->
+    <div
+      id="mobile-menu"
+      class="hidden lg:hidden px-4 pb-4"
+    >
+      <nav class="flex flex-col space-y-3">
+        <a href="#home" class="text-slate-600 hover:text-purple-500 font-medium">Home</a>
+        <a href="#about" class="text-slate-600 hover:text-purple-500 font-medium">About Me</a>
+        <a href="#contact" class="text-slate-600 hover:text-purple-500 font-medium">Contact</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- SCRIPT HAMBURGER -->
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  hamburger.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+<!-- ------------------- -->
+
+     <!-- end navigasi -->
+
+    <!-- page 1 -->
+    <section id="home" class="pt-36 pb-20">
+  <div class="container mx-auto">
+    <div class="flex flex-wrap items-center">
+
+      <!-- KIRI : TEKS -->
+      <div class="w-full px-4 lg:w-1/2">
+        <h1 class="text-base font-bold text-black md:text-xl lg:text-2xl"data-aos="fade-right" data-aos-duration="2000" >
+          MARHABAN BIKUM👋, ANA
+          <span class="block font-bold text-slate-900 text-4xl mt-1 lg:text-5xl">
+            AQIILAH <span class="text-purple-500">FATHIYYATUN</span> NAJAH
+          </span>
+        </h1>
+
+        <h2 class="text-slate-500 mb-5 text-lg font-bold">
+          Tholibah & school mazadapalembang
+        </h2>
+
+        <p class="font-medium text-slate-400 mb-10 leading-relaxed">
+          Bukan tentang seberapa cepat hasil tercapai,
+           tetapi seberapa sungguh ikhtiar dijalani.
+         Karena Allah mencintai hamba-Nya yang bersungguh-sungguh dalam amalnya
+        </p>
+
+        
+      </div>
+
+      <!-- KANAN : GAMBAR + BLOB -->
+      <div class="w-full px-4 lg:w-1/2 flex justify-center lg:justify-end mt-12 lg:mt-0">
+        <div class="relative w-80 h-80 sm:w-96 sm:h-96 lg:w-112.5 lg:h-112.5">
+
+          <!-- BLOB -->
+          <svg
+            class="absolute inset-0 w-full h-full -z-10 scale-95 "
+            viewBox="0 0 200 200"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="#9C27B0"
+              d="M30,-50C42.8,-44.6,59.6,-44.4,65.7,-36.9C71.7,
+              -29.4,67,-14.7,67.4,0.2C67.8,15.2,73.3,30.3,68.4,39.9C63.6,49.4,48.3,53.4,
+              35.2,59.4C22.1,65.5,11,73.6,-1,75.4C-13.1,77.2,-26.2,72.7,-38.2,66C-50.2,59.3,
+              -61.1,50.4,-68.2,39.1C-75.3,27.7,-78.6,13.9,-77.2,0.8C-75.8,-12.3,-69.8,-24.5,
+              -62.7,-35.9C-55.6,-47.3,-47.5,-57.8,-36.9,-64.4C-26.3,-71,-13.1,-73.7,-2.2,
+              -69.8C8.6,-65.9,17.3,-55.4,30,-50Z"
+              transform="translate(100 100) scale(1.15)"
+            />
+          </svg>
+
+          <!-- FOTO -->
+        <img
+           src="img/akillaa.png"
+           alt="Aqiilah"
+           class="w-80 sm:w-112.5 lg:w-130 h-auto mx-auto mt-20 rounded-full"/>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+    <!-- end page 1 -->
+
+    <!-- page about me -->
+     <section id="about" class="pt-36 pb-32">
+        <div class="container mx-auto px-4 lg:px-5 xl:px-0">
+            <div class="flex flex-wrap ">
+                     <div class="w-full px-4 mb-10 lg:w-1/2 lg:max-w-xl lg:mx-auto">
+                        <h4 class="font-bold text purple text-lg mb-3">ABOUT <span class="font-bold text-lg mb-3 text-purple-500">ME</span></h4>
+                        <h2 class="font-bold text-3xl text-dark mb-5 max-w-xl lg:text-4xl">haii nama aku<span class="text-purple-500"> aqila</span>h fathiyyatun najah</h2>
+                          <p class=" text-slate-400 font-medium text-base lg:text-lg">
+                         Haii, nama aku Aqiilah Fathiyyatun Najah.
+                         Aku berusia 16 tahun, lahir pada 24 Juni 2009 di Sekayu. Saat <br>
+                         ini aku bersekolah di Mazadah yang berada di Palembang.
+
+                         Di sela waktu belajar, aku suka menghabiskan waktu dengan<br>
+                          bermain Roblox. Dari situ aku belajar berkreasi, bekerja sama, <br>
+                          dan melatih logika. Portofolio ini aku buat sebagai wadah<br>
+                           untuk mendokumentasikan proses belajarku serta sebagai<br>
+                            langkah awal untuk terus berkembang dan mencoba hal-hal baru.
+                           </p>
+                            
+                     </div>
+                    <div class="w-full px-1 mb-10 lg:w-1/2 lg:max-w-xl lg:mx-auto mt-10">
+                        <h4 class="font-bold text purple text-2xl mb-4">MARI BERTEMAN</h4>
+                          <p class=" text-slate-400 font-medium text-base lg:text-lg mb-6">
+                           Kalian bisa panggil aku <span class="text-bold text-dark">kila</span>. Aku berumur 16 tahun dan saat ini tinggal di Palembang. 
+                            Sekarang aku sedang belajar di Sekolah Mazada Palembang.
+                           Aku terbuka untuk berteman, berbagi cerita, dan belajar hal baru bersama.
+
+                           Kalau mau kenal lebih dekat atau sekadar ngobrol santai, 
+                           kalian bisa hubungi aku lewat Instagram, WhatsApp, atau main bareng di Roblox. Jangan ragu ya 😊
+                           </p>
+                       
+                     </div>
+            </div>
+
+        </div>
+     </section>
+    <!-- end page about me -->
+
+
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="min-h-screen flex items-center justify-center px-6">
+<div class="max-w-4xl w-full">
+
+
+<!-- Header -->
+<div class="text-center mb-14">
+<h1 class="text-4xl font-bold text-slate-900 mb-4">MY <span class="text-purple-500">CONTACT</span></h1>
+<p class="text-slate-600 max-w-xl mx-auto">
+hii kamu mau tahu lebih lanjut tentang aku atau sekedar ngobrol bisaaa kok.
+atau mungkin kamu ingin kasih aku kritik dan saran supaya aku bisa lebih baik lagi.
+silahkan hubungi aku lewat kontak di bawah ini yaa!🤗
+</p>
+</div>
+
+
+<!-- Contact Cards -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+
+
+<!-- Email -->
+<a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#spam?compose=DmwnWrRnZVgvJcgxMdBtMnFRKxVFvzlvKRvWtFLdpGngWBTPnQFBChjBgGwbNHgTbNgZftFsRWmQ" class="group bg-white rounded-2xl shadow-lg p-8 text-center hover:-translate-y-1 transition" target="_blank">
+<div class="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full bg-purple-100 text-purple-600">
+<i class="fa fa-envelope" aria-hidden="true"></i>
+</div>
+<h3 class="text-lg font-semibold text-slate-900 mb-1">Email</h3>
+<p class="text-sm text-slate-600">aqiilahfathiyyatun<br>@gmail.com</p>
+<span class="mt-3 inline-block text-purple-500 text-sm group-hover:underline">Kirim Email</span>
+</a>
+
+
+<!-- WhatsApp -->
+<a href="https://wa.link/oe5hqy" target="_blank" class="group bg-white rounded-2xl shadow-lg p-8 text-center hover:-translate-y-1 transition">
+<div class="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full bg-green-100 text-green-600">
+<i class="fa-brands fa-whatsapp"></i>
+</div>
+<h3 class="text-lg font-semibold text-slate-900 mb-1">WhatsApp</h3>
+<p class="text-sm text-slate-600">+62 878-8352-2402</p>
+<span class="mt-3 inline-block text-green-500 text-sm group-hover:underline">Hubungi Saya</span>
+</a>
+
+
+<!-- Instagram -->
+<a href="https://www.instagram.com/kilaaaew_/" target="_blank" class="group bg-white rounded-2xl shadow-lg p-8 text-center hover:-translate-y-1 transition">
+<div class="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full bg-pink-100 text-pink-600">
+<i class="fa-brands fa-instagram"></i>
+</div>
+<h3 class="text-lg font-semibold text-slate-900 mb-1">Instagram</h3>
+<p class="text-sm text-slate-600">@kilaaaew_</p>
+<span class="mt-3 inline-block text-pink-500 text-sm group-hover:underline">Lihat Profil</span>
+</a>
+
+<!-- Roblox -->
+<a href="https://www.roblox.com/users/7730560499/profile" target="_blank" class="group bg-white rounded-2xl shadow-lg p-8 text-center hover:-translate-y-1 transition">
+<div class="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full bg-blue-100 text-blue-600">
+
+
+<svg role="img" width="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Roblox</title>
+<path d="M18.926 23.998 0 18.892 5.075.002 24 5.108ZM15.348 10.09l-5.282-1.453-1.414 5.273 5.282 1.453z"/></svg>
+</div>
+<h3 class="text-lg font-semibold text-blue-500 mb-1">Roblox</h3>
+<p class="text-sm text-slate-600">d3wdropp</p>
+<span class="mt-3 inline-block text-blue-500 text-sm group-hover:underline">Lihat Profil</span>
+</a>
+
+
+</div>
+
+
+<!-- Footer Text -->
+<div class="mt-16 text-center text-sm text-slate-500">
+<p>“Sebaik-baik manusia adalah yang paling bermanfaat bagi manusia lainnya.”</p>
+<p class="mt-2">— HR. Ahmad</p>
+</div>
+
+
+</div>
+</section>
+
+
+
+<footer class="bg-purple-200 border-t border-slate-200 mt-10">
+  <div class="max-w-6xl mx-auto px-6 py-10 text-center">
+    
+    <h3 class="text-lg font-semibold text-slate-800 mb-2">
+      Aqilah Fathiyyatun Najah💜
+    </h3>
+
+    <p class="text-sm text-slate-600 mb-4">
+      “Dan apa saja nikmat yang ada pada kalian, maka dari Allah-lah (datangnya).”
+    </p>
+    <p class="text-xs text-slate-500 mb-6">
+      — QS. An-Nahl : 53
+    </p>
+
+    <div class="flex justify-center gap-6 text-sm text-slate-500">
+      <a href="#home" class="hover:text-purple-500 transition">Home</a>
+      <a href="#about" class="hover:text-purple-500 transition">About</a>
+      <a href="#contact" class="hover:text-purple-500 transition">Contact</a>
+    </div>
+
+    <p class="mt-8 text-xs text-slate-600">
+      © 2025 • Dibuat dengan niat baik & doa 🤍
+    </p>
+
+  </div>
+</footer>
+
+
+    <!-- end page contact -->
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</html>
